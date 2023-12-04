@@ -11,6 +11,10 @@
  * 輸出: 'Input is a number: 123'
  */
 
-export function handleInput(input) {
-    // 在此實現函式
-}
+const handleInput = (input: string | number): string => typeof input === 'string'
+    ? `Input is a string: ${input}`
+    : `Input is a number: ${input}`;
+
+export {
+    handleInput,
+};

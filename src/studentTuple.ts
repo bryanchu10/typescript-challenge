@@ -7,6 +7,12 @@
  * 輸出: 'Alice: 85%'
  */
 
-export function printStudentInfo(student) {
-    // 在此實現函式
+// export function printStudentInfo(student) {
+//     // 在此實現函式
+// }
+
+const printStudentInfo = (student: ['string', number]): string => `${student[0]}: ${student[1]}%`
+
+export {
+    printStudentInfo,
 }
