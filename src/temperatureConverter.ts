@@ -3,5 +3,8 @@
  * @param celsius - 攝氏溫度
  * @returns 華氏溫度
  */
-export function celsiusToFahrenheit(celsius: number): number {
-}
+const celsiusToFahrenheit = (celsius: number): number => celsius * 9 / 5 + 32;
+
+export { 
+  celsiusToFahrenheit, 
+};
