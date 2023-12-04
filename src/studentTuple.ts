@@ -11,7 +11,7 @@
 //     // 在此實現函式
 // }
 
-const printStudentInfo = (student: ['string', number]) => `${student[0]}: ${student[1]}%`
+const printStudentInfo = (student: ['string', number]): string => `${student[0]}: ${student[1]}%`
 
 export {
     printStudentInfo,
