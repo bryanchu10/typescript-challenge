@@ -12,6 +12,18 @@
  * 輸入: []
  * 輸出: 0
  */
-export function arraySum(numbers: number[]): number {
-    // 在此實現函式
+// export function arraySum(numbers: number[]): number {
+//     // 在此實現函式
+// }
+const arraySum = (numbers: number[]): number => {
+    const initialValue = 0;
+    const sum = numbers.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        initialValue
+    );
+    return sum; 
+}
+
+export {
+    arraySum,
 }
