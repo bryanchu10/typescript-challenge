@@ -12,7 +12,7 @@ enum TrafficLight {
   'Yellow',
   'Green',
 }
-const getTrafficLightStatus = (light: TrafficLight) => `The traffic light is ${TrafficLight[light]}`;
+const getTrafficLightStatus = (light: TrafficLight): string => `The traffic light is ${TrafficLight[light]}`;
 
 export {
   TrafficLight,
