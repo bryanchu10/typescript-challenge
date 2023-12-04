@@ -17,7 +17,7 @@ interface VehicleInfo {
     year: number;
 }
 
-const vehicleInfo = (vehicle: VehicleInfo) => `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
+const vehicleInfo = (vehicle: VehicleInfo): string => `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
 
 export {
     vehicleInfo,
