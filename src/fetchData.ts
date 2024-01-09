@@ -5,5 +5,12 @@
  * @returns - 回傳一個 Promise，該 Promise resolve 的值應該是從 URL 取得的資料
  */
 
-// 請在下方寫下你的程式碼
+const fetchData = async (url: string): Promise<any> => {
+    const response = await fetch(url);
+    return await response.json();
+}
+
+export {
+    fetchData,
+}
 
