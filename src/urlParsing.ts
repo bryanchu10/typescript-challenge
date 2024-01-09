@@ -18,6 +18,15 @@ interface UrlParts {
   path: string;
 }
 
-export function parseUrl(url: string): UrlParts {
-   // 請在此處寫下你的程式碼
+const parseUrl = (url: string): UrlParts => {
+  const urlObject = new URL(url);
+  return {
+    protocol: urlObject.protocol,
+    hostname: urlObject.hostname,
+    path: urlObject.pathname,
+  }
+}
+
+export {
+    parseUrl,
 }

@@ -8,6 +8,8 @@
  * @param numbers - 一個需要被過濾的數字陣列
  * @returns - 回傳只包含偶數的數字陣列
  */
-export function filterEvens(numbers: number[]): number[] {
-    // 請在此處寫下你的程式碼
+const filterEvens = (numbers: number[]): number[] => numbers.filter((number) => number % 2 === 0);
+
+export {
+    filterEvens,
 }

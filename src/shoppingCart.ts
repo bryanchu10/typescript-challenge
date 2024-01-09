@@ -9,7 +9,7 @@ interface Product {
  * 範例：createShoppingCart() 應該回傳一個購物車物件，該物件應該有 addItem、getTotalPrice、getItemCount 和 clear 等方法
  * @returns - 回傳一個購物車物件
  */
-export function createShoppingCart() {
+const createShoppingCart = () => {
     let items: Product[] = [];
 
     function addItem(item: Product) {
@@ -21,7 +21,7 @@ export function createShoppingCart() {
      * 範例：getTotalPrice() 應該回傳 300，假設購物車中有兩個商品，價格分別為 100 和 200
      */
     function getTotalPrice() {
-        // 請在此處寫下你的程式碼
+        return items.reduce((total, item) => total + item.price, 0);
     }
 
     function getItemCount() {
@@ -38,4 +38,8 @@ export function createShoppingCart() {
         getItemCount,
         clear
     };
+}
+
+export {
+    createShoppingCart,
 }

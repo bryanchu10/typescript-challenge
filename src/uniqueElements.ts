@@ -4,6 +4,8 @@
  * @param array - 一個數字陣列
  * @returns - 回傳包含所有唯一元素的新陣列
  */
-export function uniqueElements(array: number[]): number[] {
-    // 請在此處寫下你的程式碼
+const uniqueElements = (array: number[]): number[] => [...new Set(array)];
+
+export {
+    uniqueElements,
 }
