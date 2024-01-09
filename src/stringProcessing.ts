@@ -8,6 +8,8 @@
  * @param str - 一個需要被轉換為大寫的字串
  * @returns - 回傳轉換後的大寫字串
  */
-export function toUpperCase(str: string): string {
-    // 請在此處寫下你的程式碼
+const toUpperCase = (str: string): string => str.toUpperCase();
+
+export {
+    toUpperCase,
 }
